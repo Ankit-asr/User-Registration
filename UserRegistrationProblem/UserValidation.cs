@@ -7,11 +7,11 @@ namespace UserRegistrationProblem
 {
     public class UserValidation
     {
-        public const string EMAIL = "^[a-z]{3,}([.][a-z]{3,})?[@][a-z]{2}[.][co]{2}([.][in]{2})?$";
-        public bool CheckEmail(string email)
+        public const string PHONE_NUMBER = "^[91]{2}\\s[0-9]{10}$";
+        public bool CheckPhoneNumber(string phoneNumber)
         {
-            Regex regex = new Regex(EMAIL);
-            return regex.IsMatch(email);
+            Regex regex = new Regex(PHONE_NUMBER);
+            return regex.IsMatch(phoneNumber);
         }
     }
 }

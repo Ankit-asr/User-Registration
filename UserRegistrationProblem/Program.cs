@@ -6,16 +6,14 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
-            string email;
+            string phoneNumber;
             UserValidation userValidation = new UserValidation();
-            Console.WriteLine("Enter Email ID:");
-            email = Console.ReadLine();
-            if (userValidation.CheckEmail(email))
-            {
-                Console.WriteLine(email + " is Valid");
-            }
+            Console.WriteLine("Enter a phone number");
+            phoneNumber = Console.ReadLine();
+            if (userValidation.CheckPhoneNumber(phoneNumber))
+                Console.WriteLine(phoneNumber + " : is valid");
             else
-                Console.WriteLine("Email not Valid");
+                Console.WriteLine(phoneNumber + " : is not valid");
         }
     }
 }
