@@ -6,14 +6,14 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
-            string password;
+            string email;
             UserValidation userValidation = new UserValidation();
-            Console.WriteLine("Enter password");
-            password = Console.ReadLine();
-            if (userValidation.CheckPassword(password))
-                Console.WriteLine(password + " : is valid");
+            Console.WriteLine("Enter email");
+            email = Console.ReadLine();
+            if (userValidation.CheckEmail(email))
+                Console.WriteLine(email + " : is valid.");
             else
-                Console.WriteLine(password + " : is not valid");
+                Console.WriteLine(email + " : is not valid.");
         }
     }
 }

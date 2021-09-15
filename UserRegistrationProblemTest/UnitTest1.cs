@@ -9,7 +9,7 @@ namespace UserRegistrationProblemTest
         public void GivenMobileNumberCheckShouldBeReturnTrue()
         {
             UserValidation userValidation = new UserValidation();
-            bool result = userValidation.CheckPassword("ankitSin8@");
+            bool result = userValidation.CheckEmail("abc@yahoo.com");
             Assert.AreEqual(true, result);
         }
     }
