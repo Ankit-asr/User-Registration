@@ -6,10 +6,10 @@ namespace UserRegistrationProblemTest
     public class UnitTest1
     {
         [TestMethod]
-        public void GivenEmailWhenCheckShouldBeReturnTrue()
+        public void GivenMobileNumberCheckShouldBeReturnTrue()
         {
             UserValidation userValidation = new UserValidation();
-            bool result = userValidation.CheckEmail("abc.xyz@bl.co.in");
+            bool result = userValidation.CheckPhoneNumber("91 9960708015");
             Assert.AreEqual(true, result);
         }
     }
