@@ -12,7 +12,7 @@ namespace UserRegistrationProblem
             email = Console.ReadLine();
             if (userValidation.CheckEmail(email))
             {
-                Console.WriteLine(email + "is Valid");
+                Console.WriteLine(email + " is Valid");
             }
             else
                 Console.WriteLine("Email not Valid");

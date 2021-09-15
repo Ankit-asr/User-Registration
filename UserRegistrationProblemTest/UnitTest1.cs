@@ -6,10 +6,10 @@ namespace UserRegistrationProblemTest
     public class UnitTest1
     {
         [TestMethod]
-        public void GivenLastNameWhenCheckShouldBeReturnTrue()
+        public void GivenEmailWhenCheckShouldBeReturnTrue()
         {
             UserValidation userValidation = new UserValidation();
-            bool result = userValidation.CheckLastName("Pkash");
+            bool result = userValidation.CheckEmail("abc.xyz@bl.co.in");
             Assert.AreEqual(true, result);
         }
     }
