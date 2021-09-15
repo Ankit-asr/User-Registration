@@ -9,7 +9,11 @@ namespace UserRegistrationProblemTest
         public void GivenPasswordWhenMachShouldReturnTrue()
         {
             UserValidation userValidation = new UserValidation();
+<<<<<<< HEAD
             bool result = userValidation.CheckPassword("ankitsingh");
+=======
+            bool result = userValidation.CheckPassword("ankitSingh");
+>>>>>>> UC6-PasswordValidationRule2
             Assert.AreEqual(true, result);
         }
     }
